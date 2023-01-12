@@ -1,0 +1,44 @@
+a{
+    text-decoration:none;
+    list-style: none;
+}
+body
+{
+    overflow-x: hidden;
+    width:100%;
+    margin:0px;
+    padding: 0px;
+}
+#hov1 img:hover{
+    width:170px;
+}
+.under{
+    width:50%;
+    margin:0 65px;
+    height:5px;
+    background: #767676;;
+    border-radius: 3px;
+    position: absolute;
+    top:23px;
+    left:0px;
+    overflow: hidden;
+}
+.under span{
+    justify-content: center;
+    width: 20px;
+    height:100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    left:0;
+    top:0;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left:-20px;
+    }
+    100%{
+        left:100%;
+    }
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">  
 <head>
+    <link rel="stylesheet" href="mohanamazon.css">
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="bootstrap.js">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="jquery-3.6.0.js"></script>
     <script src="popper.min.js"></script>
@@ -10,123 +10,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        a{
-            text-decoration:none;
-            list-style: none;
-        }
-        body
-        {
-            overflow-x: hidden;
-            width:100%;
-        }
-        header{
-            width:100%;
-        }
-    </style>
     <title>Mohan's Amazon Website...</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm fixed-top row" style="height:90px;padding-top:35px; background-color: rgb(5, 5, 5);">
-            <ul class="navbar-nav col-12">
-                <li class="nav-item"><a href="#" class="nav-link text-light"><img src="amazon1.png" width="150px" height="20px" class="img-thumbnail mb-4" style="border-radius:150px; background-color: rgb(5, 5, 5);border:none;"></a></li>
-                &nbsp;
-                <li class="nav-item"><a href="#" class="nav-link text-light"><i class="fa-sharp fa-solid fa-location-dot"></i>
-                <span>Hello </span><br>
-                <span><h6>Select your adress</h6></span>
-            </a></li>
-            &nbsp;
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle text-dark btn btn-outline-info btn-light mt-3 input-group-prepend"data-toggle="dropdown" style="height:40px;">
-                    <h5>All</h5></a>
-                <div class="dropdown-menu">
-                    <a href="#mohan" class="dropdown-item">All categories</a>
-                    <a href="#mohan" class="dropdown-item">Alexa Skills</a>
-                    <a href="#mohan" class="dropdown-item">Amazon Fashion</a>
-                    <a href="#mohan" class="dropdown-item">Amazon Fresh</a>
-                    <a href="#mohan" class="dropdown-item">Amazon Pharmacy</a>
-                    <a href="#mohan" class="dropdown-item">Appliances</a>
-                    <a href="#mohan" class="dropdown-item">Apps & Games</a>
-                    <a href="#mohan" class="dropdown-item">Baby</a>
-                    <a href="#mohan" class="dropdown-item">Beauty</a>
-                    <a href="#mohan" class="dropdown-item">Books</a>
-                    <a href="#mohan" class="dropdown-item">Car & Motorbike</a>
-                    <a href="#mohan" class="dropdown-item">Clothing & Accesories</a>
-                    <a href="#mohan" class="dropdown-item">Deals</a>
-                    <a href="#mohan" class="dropdown-item">Electronics</a>
-                    <a href="#mohan" class="dropdown-item">Furniture</a>
-                    <a href="#mohan" class="dropdown-item">Garden & Outdoors</a>
-                    <a href="#mohan" class="dropdown-item">Gift Cards</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <form class="form-inline">
-                    <input type="text" name="Search" placeholder="Search..." id="mohan" class="form-control mt-3" style="height:40px; width:470px;" required>
-                    <button class="btn btn-warning mt-3" style="margin-left: -24px;height:40px; width:50px"><i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </li>
-            &nbsp;
-            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <img src="indiaflag.png" width="40px" class="mt-3">
-            </a>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item bg-light">
-                <input type="radio" value="language" name="language">English <br>
-                <input type="radio" value="language" name="language">Hindi <br>
-                <input type="radio" value="language" name="language">Telugu <br>
-                <input type="radio" value="language" name="language">Kannada <br>
-                <input type="radio" value="language" name="language">Malayalam
-        </a> 
-        </div>
-            </li>
-            &nbsp;&nbsp;
-            <li class="nav-item dropdown" style="margin-top:-10px;"><a href="#" class="nav-link drop-toggle" data-toggle="dropdown">
-                <button class="btn btn-outline-light">
-                <span>Hello,Sign in</span>
-                <h4><span>Account</span></h4>
-            </button></a>
-            <div class="dropdown-menu">
-                <form name="fn" class="dropdown-item">
-                    <div class="row">
-                        <input type="submit" value="Sign In" class="btn btn-warning btn-block">
-                        <p>New Customer?</p><a href="#">Start Here.</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="#" class="text-dark"><strong>Your Account</strong></a>
-                            <br>
-                            <a href="#" class="text-dark"><p>Your Account</p></a>
-                            <a href="#" class="text-dark"><p>Your Order</p></a>
-                            <a href="#" class="text-dark"><p>Your Wish list</p></a>
-                            <a href="#" class="text-dark"><p>Your Recommendations</p></a>
-                            <a href="#" class="text-dark"><p>Your Prime Membership</p></a>
-                            <a href="#" class="text-dark"><p>Your Prime Video</p></a>
-                            <a href="#" class="text-dark"><p>Your Subscribe & Save items</p></a>
-                            <a href="#" class="text-dark"><p>Memberships and subscriptions</p></a>
-                            <a href="#" class="text-dark"><p>Your Amazon Business Account</p></a>
-                            <a href="#" class="text-dark"><p>Your Amazon Business Account</p></a>
-                            <a href="#" class="text-dark"><p>Manage Your Content & Devices</p></a>
+    <div class="row" style="width:100vw;background-color: rgb(5, 5, 5);">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-sm navbar-expand-lg">
+                <a href="#" class="navbar-brand text-light mx-auto"><img src="amazon1.png" width="150px" height="20px" class="img-thumbnail mb-4" style="border-radius:150px; background-color: rgb(5, 5, 5);border:none;"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#sai">
+                    <span class="navbar-toggler-icon" style="color:rgb(247, 232, 212);font-size:30px">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="sai">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-auto"><a href="#" class="nav-link text-light"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <span>Hello </span><br>
+                        <span><h6>Select your adress</h6></span>
+                    </a></li>
+                    &nbsp;
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark btn btn-outline-info btn-light mt-3 input-group-prepend"data-toggle="dropdown" style="height:40px;">
+                            <h5>All</h5></a>
+                        <div class="dropdown-menu">
+                            <a href="#mohan" class="dropdown-item">All categories</a>
+                            <a href="#mohan" class="dropdown-item">Alexa Skills</a>
+                            <a href="#mohan" class="dropdown-item">Amazon Fashion</a>
+                            <a href="#mohan" class="dropdown-item">Amazon Fresh</a>
+                            <a href="#mohan" class="dropdown-item">Amazon Pharmacy</a>
+                            <a href="#mohan" class="dropdown-item">Appliances</a>
+                            <a href="#mohan" class="dropdown-item">Apps & Games</a>
+                            <a href="#mohan" class="dropdown-item">Baby</a>
+                            <a href="#mohan" class="dropdown-item">Beauty</a>
+                            <a href="#mohan" class="dropdown-item">Books</a>
+                            <a href="#mohan" class="dropdown-item">Car & Motorbike</a>
+                            <a href="#mohan" class="dropdown-item">Clothing & Accesories</a>
+                            <a href="#mohan" class="dropdown-item">Deals</a>
+                            <a href="#mohan" class="dropdown-item">Electronics</a>
+                            <a href="#mohan" class="dropdown-item">Furniture</a>
+                            <a href="#mohan" class="dropdown-item">Garden & Outdoors</a>
+                            <a href="#mohan" class="dropdown-item">Gift Cards</a>
                         </div>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <form class="form-inline" method="get" action="post">
+                            <div class="form-group">
+                            <input type="text" name="Search" placeholder="Search..." id="mohan" class="form-control mt-3" style="height:40px; width:470px;" required>
+                            </div>
+                            <button class="btn btn-warning mt-3" style="margin-left: -24px;height:40px; width:50px"><i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item dropdown mx-auto"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <img src="indiaflag.png" width="40px" class="mt-3">
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item bg-light">
+                        <input type="radio" value="language" name="language">English <br>
+                        <input type="radio" value="language" name="language">Hindi <br>
+                        <input type="radio" value="language" name="language">Telugu <br>
+                        <input type="radio" value="language" name="language">Kannada <br>
+                        <input type="radio" value="language" name="language">Malayalam
+                </a> 
+                </div>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item dropdown mx-auto" style="margin-top:-10px;"><a href="#" class="nav-link drop-toggle text-light" data-toggle="dropdown">
+                        <button class="btn text-light">
+                        <span>Hello,Sign in</span>
+                        <h4><span>Account</span></h4>
+                    </button></a>
+                    <div class="dropdown-menu">
+                        <form name="fn" class="dropdown-item">
+                            <div class="row">
+                                <input type="submit" value="Sign In" class="btn btn-warning btn-block">
+                                <p>New Customer?</p><a href="#">Start Here.</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="#" class="text-dark"><strong>Your Account</strong></a>
+                                    <br>
+                                    <a href="#" class="text-dark"><p>Your Account</p></a>
+                                    <a href="#" class="text-dark"><p>Your Order</p></a>
+                                    <a href="#" class="text-dark"><p>Your Wish list</p></a>
+                                    <a href="#" class="text-dark"><p>Your Recommendations</p></a>
+                                    <a href="#" class="text-dark"><p>Your Prime Membership</p></a>
+                                    <a href="#" class="text-dark"><p>Your Prime Video</p></a>
+                                    <a href="#" class="text-dark"><p>Your Subscribe & Save items</p></a>
+                                    <a href="#" class="text-dark"><p>Memberships and subscriptions</p></a>
+                                    <a href="#" class="text-dark"><p>Your Amazon Business Account</p></a>
+                                    <a href="#" class="text-dark"><p>Your Amazon Business Account</p></a>
+                                    <a href="#" class="text-dark"><p>Manage Your Content & Devices</p></a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
-            </div>
-            </li>
-            &nbsp;&nbsp;&nbsp;
-            <li class="nav-item">
-                <a href="#" class="nav-link btn  btn-outline-light text-light">
-                    Refer
-                    <h5>& Orders</h5>
-                </a>
-            </li>
-            <li class="nav-item mb-4"><a href="#" class="nav-link text-light"><img src="amazon cart.jpg" width="120px" height="60px" class="img-thumbnail"></a></li>
-            </ul>
-        </nav>
-    </header>
-<br>
-<section>
-<div class="row" style="width:">
+                    </li>
+                    &nbsp;&nbsp;&nbsp;
+                    <li class="nav-item mx-auto">
+                        <a href="#" class="nav-link btn text-light">
+                            Refer
+                            <h5>& Orders</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-4 mx-auto"><a href="#" class="nav-link ml-4 text-light"><i class="fa-solid fa-cart-shopping" style="color:antiquewhite;font-size:50px;"></i>
+                        <strong style="font-size:15px;">Cart</strong></a></li>
+                 </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<section style="margin-top:-65px">
+<div class="row">
     <div class="col-sm-12">
                 <ul class="navbar-nav navbar-dark bg-dark navbar-expand-sm nav-tabs" style="margin-top:65px;">
                     <li class="nav-item"><a href="#" class="nav-link text-light ml-4" ><strong>Amazon MiniTV</strong></a></li>
@@ -149,7 +143,7 @@
 <marquee scrollamount="20" direction="left"><a href="#"><img src="marq.jpg"></a></marquee>
 <div clas="row">
     <div class="col-sm-12">
-        <div class="carousel slide" data-interval="1700" data-ride="carousel" id="one">
+        <div class="carousel slide" data-interval="1000" data-ride="carousel" id="one">
             <ul class="carousel-indicators">
                 <li data-target="#one" data-slide-to="0" class="active"></li>
                 <li data-target="#one" data-slide-to="1"></li>
@@ -225,7 +219,7 @@
     </div>
 </div>
 </section>
-<section>
+<section id="hov1">
 <div class="row">
         <div class="card-group">
             <div class="card col-sm-3">
@@ -234,18 +228,18 @@
                 </div>
                 <div class="row">
                 <div class="card-body col-sm-6">
-                    <img src="im1.jpg" width="160px">
+                    <img src="im1.jpg" width="160px" class="mx-auto d-block">
                     <a href="#" class="text-center text-dark mx-auto d-block">Sofa cum beds</a>
-                    <img src="im2.jpg" width="150px">
+                    <img src="im2.jpg" width="150px" class="mx-auto d-block">
                     <a href="#" class="text-center text-dark mx-auto d-block">Office chairs & study
                         tables
                     </a>
                 </div>
                 <div class="card-footer col-sm-6 mt-2">
-                    <img src="im3.jpg" width="160px">
-                    <a href="#" class="text-center text-dark">Bean bags</a>
-                    <img src="im4.jpg" width="150px">
-                    <a href="#" class="text-center text-dark">Explore all</a>
+                    <img src="im3.jpg" width="160px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Bean bags</a>
+                    <img src="im4.jpg" width="150px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Explore all</a>
                     <br>
                 </div>
                 <a href="#" class="mx-auto d-block"><strong> Visit our furniture store</strong></a>
@@ -257,17 +251,17 @@
                 </div>
                 <div class="row">
                 <div class="card-body col-sm-6">
-                    <img src="im5.jpg" width="160px">
-                    <a href="#" class="text-center text-dark">Profissional tools</a>
-                    <img src="im6.jpg" width="150px">
-                    <a href="#" class="text-center text-dark">Testing & measuring instruments
+                    <img src="im5.jpg" width="160px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Profissional tools</a>
+                    <img src="im6.jpg" width="150px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Testing & measuring instruments
                     </a>
                 </div>
                 <div class="card-footer col-sm-6 mt-2">
-                    <img src="im7.jpg" width="160px">
-                    <a href="#" class="text-center text-dark">Welding machines</a>
-                    <img src="im8.jpg" width="150px">
-                    <a href="#" class="text-center text-dark">Handpicked offers</a>
+                    <img src="im7.jpg" width="160px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Welding machines</a>
+                    <img src="im8.jpg" width="150px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Handpicked offers</a>
                     <br>
                 </div>
                 <a href="#" class="mx-auto d-block"><strong>See more</strong></a>
@@ -279,17 +273,17 @@
                 </div>
                 <div class="row">
                 <div class="card-body col-sm-6">
-                    <img src="im9.jpg" width="150px">
-                    <a href="#" class="text-center text-dark">Womens Clothing</a>
-                    <img src="im10.jpg" width="150px">
-                    <a  href="#" class="text-center text-dark">Footwear Handbags
+                    <img src="im9.jpg" width="150px" class="mx-auto d-block">
+                    <a href="#" class="text-center text-dark mx-auto d-block">Womens Clothing</a>
+                    <img src="im10.jpg" width="150px" class="mx-auto d-block">
+                    <a  href="#" class="text-center text-dark mx-auto d-block">Footwear Handbags
                     </a>
                 </div>
                 <div class="card-footer col-sm-6 mt-2">
-                    <img src="im11.jpg" width="150px">
-                    <a href="#"class="text-center text-dark">Watches</a>
-                    <img src="im12.jpg" width="150px">
-                    <a class="text-center text-dark">Fashion Jewellery</a>
+                    <img src="im11.jpg" width="150px" class="mx-auto d-block">
+                    <a href="#"class="text-center text-dark mx-auto d-block">Watches</a>
+                    <img src="im12.jpg" width="150px" class="mx-auto d-block">
+                    <a class="text-center text-dark mx-auto d-block">Fashion Jewellery</a>
                     <br>
                 </div>
                 <a href="#" class="mx-auto d-block"><strong> See all offers</strong></a>
@@ -301,7 +295,7 @@
                 </div>
                     <a href="#" class="btn btn-warning btn-block">Sign in securely</a>
                     <div class="card-footer">
-                        <img src="ima1.jpg">
+                        <img src="ima1.jpg" class=" mx-auto d-block">
                     </div>
             </div>
         </div>
@@ -315,16 +309,16 @@
             </div>
             <div class="row">
             <div class="card-body col-sm-6">
-                <img src="im13.jpg" width="160px">
+                <img src="im13.jpg" width="160px" class="mx-auto d-block">
                 <a href="#" class="text-center text-dark mx-auto d-block">claim your scratch card</a>
-                <img src="im14.jpg" width="150px">
+                <img src="im14.jpg" width="150px" class="mx-auto d-block">
                 <a href="#" class="text-center text-dark mx-auto d-block">Redeem your collected rewards</a>
             </div>
             <div class="card-footer col-sm-6 mt-2">
-                <img src="im15.jpg" width="160px">
-                <a href="#" class="text-center text-dark">Unlock more rewards when you pay or shop</a>
-                <img src="im16.jpg" width="150px">
-                <a href="#" class="text-center text-dark">Explore all offers in one place</a>
+                <img src="im15.jpg" width="160px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Unlock more rewards when you pay or shop</a>
+                <img src="im16.jpg" width="150px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Explore all offers in one place</a>
                 <br>
             </div>
             <a href="#" class="mx-auto d-block"><strong> See more</strong></a>
@@ -336,17 +330,17 @@
             </div>
             <div class="row">
             <div class="card-body col-sm-6">
-                <img src="im17.jpg" width="160px">
-                <a href="#" class="text-center text-dark">Get up to 2000 off on flights</a>
-                <img src="im18.jpg" width="150px">
-                <a href="#" class="text-center text-dark">Zero convenience fees on train tickets
+                <img src="im17.jpg" width="160px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Get up to 2000 off on flights</a>
+                <img src="im18.jpg" width="150px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Zero convenience fees on train tickets
                 </a>
             </div>
             <div class="card-footer col-sm-6 mt-2">
-                <img src="im19.jpg" width="160px">
-                <a href="#" class="text-center text-dark">Guaranteed rewards on bus tickets</a>
-                <img src="im20.jpg" width="150px">
-                <a href="#" class="text-center text-dark">Products for your travel needs</a>
+                <img src="im19.jpg" width="160px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Guaranteed rewards on bus tickets</a>
+                <img src="im20.jpg" width="150px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Products for your travel needs</a>
                 <br>
             </div>
             <a href="#" class="mx-auto d-block"><strong>See all offers</strong></a>
@@ -358,17 +352,17 @@
             </div>
             <div class="row">
             <div class="card-body col-sm-6">
-                <img src="im21.jpg" width="150px">
-                <a href="#" class="text-center text-dark">Cleaning accesssories</a>
-                <img src="im22.jpg" width="150px">
-                <a  href="#" class="text-center text-dark">Tyre & rim care
+                <img src="im21.jpg" width="150px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Cleaning accesssories</a>
+                <img src="tyre1.jpg" width="150px" height="90px" class="mx-auto d-block">
+                <a  href="#" class="text-center text-dark mx-auto d-block">Tyre & rim care
                 </a>
             </div>
             <div class="card-footer col-sm-6 mt-2">
-                <img src="im23.jpg" width="150px">
-                <a href="#"class="text-center text-dark">Helmets</a>
-                <img src="im24.jpg" width="150px">
-                <a class="text-center text-dark">Vacuum cleaner</a>
+                <img src="im23.jpg" width="150px" class="mx-auto d-block">
+                <a href="#"class="text-center text-dark mx-auto d-block">Helmets</a>
+                <img src="im24.jpg" width="150px" class="mx-auto d-block">
+                <a class="text-center text-dark mx-auto d-block">Vacuum cleaner</a>
                 <br>
             </div>
             <a href="#" class="mx-auto d-block"><strong> See more</strong></a>
@@ -380,17 +374,17 @@
             </div>
             <div class="row">
             <div class="card-body col-sm-6">
-                <img src="im25.jpg" width="150px">
-                <a href="#" class="text-center text-dark">Fresh</a>
-                <img src="im26.jpg" width="150px">
-                <a  href="#" class="text-center text-dark">Mobiles
+                <img src="im25.jpg" width="150px" class="mx-auto d-block">
+                <a href="#" class="text-center text-dark mx-auto d-block">Fresh</a>
+                <img src="im26.jpg" width="150px" class="mx-auto d-block">
+                <a  href="#" class="text-center text-dark mx-auto d-block">Mobiles
                 </a>
             </div>
             <div class="card-footer col-sm-6 mt-2">
-                <img src="im27.jpg" width="150px">
-                <a href="#"class="text-center text-dark">Fashion</a>
-                <img src="im28.jpg" width="150px">
-                <a class="text-center text-dark">Electronics</a>
+                <img src="im27.jpg" width="150px" class="mx-auto d-block">
+                <a href="#"class="text-center text-dark mx-auto d-block">Fashion</a>
+                <img src="im28.jpg" width="150px" class="mx-auto d-block">
+                <a class="text-center text-dark mx-auto d-block">Electronics</a>
                 <br>
             </div>
             <a href="#" class="mx-auto d-block"><strong> See more</strong></a>
@@ -400,6 +394,169 @@
 </div>
 </section>
 <br>
+<br>
+<div class="row text-center">
+    <div class="col-sm-12">
+        <a href="#sec2" data-toggle="collapse" class="btn text-light btn-sm px-4" style="background-color:rgb(242, 135, 5); font-size: 30px;"><strong> View All</strong></a>
+    </div>
+</div>
+<br>
+<section id="sec2" class="collapse">
+<br>
+    <div class="row">
+        <div class="col-sm-12 mx-auto d-block">
+            <div class="card-group">
+                <div class="card mr-4" width="300px" style="background-color:antiquewhite">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="col1.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light" onclick="minus()"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light" onclick="plus()"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="col3.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="col4.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="col2.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 mx-auto d-block">
+            <div class="card-group">
+                <div class="card mr-4" width="300px" style="background-color:antiquewhite">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="23.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="8.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="25.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="26.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Product |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 mx-auto d-block">
+            <div class="card-group">
+                <div class="card mr-4" width="300px" style="background-color:antiquewhite">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="10.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Watch |  ₹1000 </strong><del>₹1400</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="13.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Watch |  ₹1100 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card mr-4" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="watch4.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Watch |  ₹1000 </strong><del>₹1500</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card" width="300px" style="background-color: antiquewhite;">
+                    <div class="card-header  mx-auto d-block" style="box-shadow:4px 15px 20px rgb(0, 0, 0);background-color: antiquewhite;">
+                        <img src="watch3.jpg" width="300px" height="300px">
+                    </div>
+                    <br>
+                    <div class="card-body  mx-auto d-block">
+                        <p><strong>Watch |  ₹1500 </strong><del>₹2000</del></p>
+                        <p>Quantity:- <button class=" btn btn-dark btn-sm text-light"><strong> - </strong></button>  1  <button class="btn btn-dark btn-sm text-light"><strong> +</strong></button></p>
+                        <button class="btn btn-warning mx-auto d-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <br>
 <div class="row">
     <div class="col-sm-12">
         <img src="ads.gif" class="mx-auto d-block" width="100%">
@@ -490,68 +647,64 @@
         </div>
     </div>
 </div>
-<div clas="row">
-    <div class="col-sm-12">
-        <h3><strong>Todays Deals
-         </strong></h3><a href="#"><p>See all deals</p></a>
-        <div class="carousel slide" data-interval="10000000" data-ride="carousel" id="five">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <a href="#"><img src="prod1.jpg" width="100%"></a>
-                     <div class="carousel-caption mb-5">
-                     </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="#"><img src="prod2.jpg" width="100%"></a>
-                    <div class="carousel-caption mb-5">
-                    </div>
-               </div>
-               <div class="carousel-item">
-                <a href="#"><img src="prod3.jpg" width="100%"></a>
-                <div class="carousel-caption mb-5">
-                </div>
-           </div>
-           <div class="carousel-item">
-            <a href="#"><img src="prod4.jpg" width="100%"></a>
-            <div class="carousel-caption mb-5">
-            </div>
-       </div>
-            </div>
-            <a href="#five" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a href="#five" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
-</div>
 <br><br>
 <div class="container-fluid text-center mx-auto">
     <p>See personalized recommendations</p>
-    <a href="amazon login form.html" class="btn btn-warning text-dark px-5">Sign in</a><br>
+    <a href="#login" class="btn btn-warning text-dark px-5" data-toggle="collapse">Sign in</a><br>
     <p>New customer? <a href="#">Start here</a></p>
 </div>
+<section id="login" class="collapse"
+style="margin: 0px;padding: 0px;font-family: montserrat; background: linear-gradient(120deg,#2980b9,#8e44ad); height: 100vh;">
+    <h1 class="text-center text-light mt-5" style="text-shadow:4px 10px 7px rgb(8, 8, 8);font-family:;font-weight: bold;font-size: 70px;">Login</h1>
+    <div class=" row">
+        <div class="col-sm-4">
+        </div> 
+            <form method="post" class="col-sm-4" style=" background-color: rgb(158, 184, 206); border-radius:15px; box-shadow: 5px 5px rgb(31, 29, 29);" >
+                <div class="form-group mt-4 mr-5">
+                    <input type="text" name="uname" id="un" class="form-control" required>
+                    <label for="un">Username</label>
+                </div>
+                <div class="form-group mr-5">
+                    <input type="password" name="upass" id="up" class="form-control" required>
+                    <label for="up">Password</label>
+                </div>
+                <a href="#" class="text-dark" style="text-decoration:none;">
+                    Forgot password?
+                </a>
+                    <input type="submit" value="Login" class="btn btn-primary btn-block text-light" style="border-radius:20px;font-size: 20px;font-weight: 600;">
+                    <div class="">
+                        Not a member?
+                        <a href="#">Signup</a>
+                    </div>
+            </form>
+    </div>
+</section>
 <section>
-<div class="row bg-dark">
-        <div class=" col-sm-12"><a href="#"  class="btn btn-dark btn-block" style="width:100vw;background-color: rgb(48, 46, 46);">Back to top</a></div>
+<div class="row bg-dark" style="width:100%">
+        <div class=" col-sm-12"><a href="#"  class="btn btn-dark btn-block" style="width:100VW;background-color: rgb(48, 46, 46);">Back to top</a></div>
         <div class="container">
         <div class="row text-light bg-dark text-center" style="font-size:13px;">
             <div class="col-sm-3">
-               <a href="#" class="text-light"><p><strong>Get to Know Us</strong></p></a> 
+               <a href="#" class="text-light"><p><strong>Get to Know Us
+                <div class="under"><span></span></div>
+               </strong></p></a> 
                <a href="#" class="text-light"><p>About Us</p></a> 
                <a href="#" class="text-light"><p>Careers</p></a> 
                <a href="#" class="text-light"><p>Press Releases</p></a> 
                <a href="#" class="text-light"><p>Amazon Science</p></a> 
             </div>
             <div class="col-sm-3">
-                <a href="#" class="text-light"><p><strong>Contact with Us</strong></p></a>
+                <a href="#" class="text-light"><p><strong>Contact with Us
+                    <div class="under"><span></span></div>
+                </strong></p></a>
                 <a href="#" class="text-light"><p>Facbook</p></a>
                 <a href="#" class="text-light"><p>Twitter</p></a>
                 <a href="#" class="text-light"><p>Instgram</p></a>
             </div>
             <div class="col-sm-3">
-                <a href="#" class="text-light"><p><strong>Make Money with Us</strong></p></a> 
+                <a href="#" class="text-light"><p><strong>Make Money with Us
+                    <div class="under"><span></span></div>
+                </strong></p></a> 
                 <a href="#" class="text-light"><p>Sell on Amazon</p></a> 
                 <a href="#" class="text-light"><p>Sell under Amazon Accelerator</p></a> 
                 <a href="#" class="text-light"><p>Amazon Global Selling</p></a> 
@@ -560,8 +713,10 @@
                 <a href="#" class="text-light"><p>Advertise Your Products</p></a> 
                 <a href="#" class="text-light"><p>Amazon Pay on Merchants</p></a> 
              </div>
-             <div class="col-sm-3">
-                <a href="#" class="text-light"><p><strong>Let Us Help You</strong></p></a> 
+             <div class="col-sm-3" style="width:100vw">
+                <a href="#" class="text-light"><p><strong>Let Us Help You
+                    <div class="under"><span></span></div>
+                </strong></p></a> 
                 <a href="#" class="text-light"><p>COVID-19 and Amazon</p></a> 
                 <a href="#" class="text-light"><p>Your Account</p></a> 
                 <a href="#" class="text-light"><p>Returns Centre</p></a> 
@@ -572,13 +727,15 @@
              </div>
         </div>
     </div>
-    <div class="row mx-auto bg-dark text-center">
-        <div class="col-sm-6 mt-5">
-            <img src="first.jpg" class="img-thumbnail float-right" width="120px" style="background:transparent;">
+</div>
+    <div class="row bg-dark">
+        <div class="col-sm-6 mx-auto">
+            &nbsp;
+            <img src="first.jpg" class="img-thumbnail mx-auto d-block" width="120px" style="background:transparent;">
         </div>
-        <div class="col-sm-6">
-            <img src="indiaflag.png" class="rounded" width="40px" style="margin-right:470px;margin-bottom:-152px ;">
-            <select class="form-control text-light bg-dark float-left mt-5" style="width:200px;">
+        <div class="col-sm-6 mx-auto d-block ">
+            &nbsp;
+            <select class="form-control text-light bg-dark mx-auto" style="width:200px;">
                 <option>English</option>
                 <option>Telugu</option>
                 <option>Hindi</option>
@@ -587,7 +744,8 @@
                 <option>odiyya</option>
             </select>
         </div>
-        
+    </div>
+        <div class="row bg-dark">
         <div class="container text-light mx-auto d-block mt-4">
         <p>Australia &nbsp; Brazil &nbsp; canada &nbsp; china &nbsp; France &nbsp; Germany &nbsp; Italy &nbsp; Japan &nbsp; Mexico &nbsp; 
             Netherlands &nbsp; Poland &nbsp; Singapore &nbsp; Span &nbsp; Turkey  &nbsp;United &nbsp;Arab &nbsp;Emirates &nbsp;&nbsp;&nbsp;
@@ -595,7 +753,6 @@
         </p>
         </div>
     </div>
-</div>
 <div style="background-color:rgb(17, 16, 16)">
     <div class="container">
         <div class="row text-center" style="background-color:rgb(17, 16, 16)">
@@ -648,11 +805,11 @@
         </div>
     </div>
     </div>
-    <footer class="footer text-light text-center bg-success">
+    <footer class="footer text-light text-center bg-dark">
         <p>Conditions of Use & Sale &nbsp; &nbsp; Privacy Notice &nbsp; &nbsp; Interest-Based Ads</p>
         <p><i class="fa-regular fa-copyright"></i><a href="#"> +91 8367747499</a>,<a href="#"> mohansai019@gmail.com </a>or its affilites</p>
     </footer>
-</section>
+</section> 
     <script>
         alert("Hai,Welcome to Mohan Amazon.in")
     </script>
